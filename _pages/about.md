@@ -9,10 +9,6 @@ redirect_from:
 
 <h1 style="color: #000000;"> caojiale(曹家了)</h1>
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
-
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +28,11 @@ Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you se
 </head>
 <body>
 
-<a href="#" class="custom-link" onclick="toggleContent('content1'); return false;">点击展开/隐藏内容1</a>
+A data-driven personal website
+======
+Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+
+<a href="#" class="custom-link" onclick="toggleContent('content1'); return false;">点击展开/隐藏内容1<br></a>
 <div id="content1" class="hidden-content">
     这里是隐藏的内容1。
 </div>  
@@ -41,9 +41,19 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 
 
 
-<a href="#" class="custom-link" onclick="toggleContent('content2'); return false;">点击展开/隐藏内容2</a>
+<a href="#" class="custom-link" onclick="toggleContent('content2'); return false;">点击展开/隐藏内容2<br></a>
 <div id="content2" class="hidden-content">
-    这里是隐藏的内容2。
+   <div id="liu2023self" class="hidden-content">
+  <p style="text-indent: 2em;">@article{liu2023self,<br>
+      title={Self-Consistent Graph Neural Networks for Semi-Supervised Node Classification},<br>
+      author={Liu, Yanbei and Zhao, Shichuan and Wang, Xiao and Geng, Lei and Xiao, Zhitao and Lin, Jerry Chun-Wei},<br>
+      journal={IEEE Transactions on Big Data},<br>
+      volume={9},<br>
+      number={4},<br>
+      pages={1186--1197},<br>
+      year={2023},<br>
+      publisher={IEEE}<br>
+}</p>
 </div>  
 
 
@@ -57,7 +67,7 @@ Getting started
 1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
 1. Check status by going to the repository settings, in the "GitHub pages" section
 
-<a href="#" class="custom-link" onclick="toggleContent('content3'); return false;">点击展开/隐藏内容3</a>
+<a href="#" class="custom-link" onclick="toggleContent('content3'); return false;">点击展开/隐藏内容3<br></a>
 <div id="content3" class="hidden-content">
     这里是隐藏的内容3。
 </div>  
