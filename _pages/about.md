@@ -16,7 +16,7 @@ Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you se
 
 Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,17 +39,17 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 <a href="#" class="custom-link" onclick="toggleContent('content1'); return false;">点击展开/隐藏内容1</a>
 <div id="content1" class="hidden-content">
     这里是隐藏的内容1。
-</div>
+</div>  
 
 <a href="#" class="custom-link" onclick="toggleContent('content2'); return false;">点击展开/隐藏内容2</a>
 <div id="content2" class="hidden-content">
     这里是隐藏的内容2。
-</div>
+</div>  
 
 <a href="#" class="custom-link" onclick="toggleContent('content3'); return false;">点击展开/隐藏内容3</a>
 <div id="content3" class="hidden-content">
     这里是隐藏的内容3。
-</div>
+</div>  
 
 <script>
 function toggleContent(contentId) {
