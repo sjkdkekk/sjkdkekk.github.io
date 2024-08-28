@@ -14,94 +14,35 @@ This is the front page of a website that is powered by the [Academic Pages templ
 A data-driven personal website
 ======
 Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-<P>
-<SCRIPT type=text/javascript>
-<!--
-// Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-  var bib = document.getElementById(articleid);
-  // Toggle
-    if(bib.style.display == "none") {
-      bib.style.display = "";
-    }
-    else {
-      bib.style.display = "none";
-    }
-}
--->
-</SCRIPT>
 
-<SCRIPT type=text/javascript>
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-40926388-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</SCRIPT>
-</P>
-<a href="javascript:toggleBibtex('cao2021pedsurvey')"  target=_self><font color="dimgray" face="Arial" style="font-size: 11pt;">[Bibtex]</font></a>
-<div id=cao2021pedsurvey class=blockcontent style="DISPLAY: none">
-<pre>
-@article{cao2021pedsurvey,
-  title={From Handcrafted to Deep Features for Pedestrian Detection: A Survey},
-  author={Jiale Cao and Yanwei Pang and Jin Xie and Fahad Shahbaz Khan and Ling Shao},
-  journal={arXiv:2010.00456},
-  year={2021},
-}
-</pre></div>
- 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<a href="#section1">链接到部分 1</a> | 
 
 
+<h2 id="section1">部分 1</h2>
+<p style="text-indent: 2em;">这是部分 1 的内容。
+  各合伙人
+  帆帆帆帆
+</p>
 
+<h2 id="section2">部分 2</h2>
+<p style="text-indent: 2em;">这是部分 2 的内容。  
+  各合伙人
+  帆帆帆帆
+</p>
 
-<a href="#" class="custom-link" onclick="toggleContent('content2'); return false;">点击展开/隐藏内容2<br></a>
-<div id="content2" class="hidden-content">
-   <div id="liu2023self" class="hidden-content">
-  <p style="text-indent: 2em;">@article{liu2023self,<br>
-      title={Self-Consistent Graph Neural Networks for Semi-Supervised Node Classification},<br>
-      author={Liu, Yanbei and Zhao, Shichuan and Wang, Xiao and Geng, Lei and Xiao, Zhitao and Lin, Jerry Chun-Wei},<br>
-      journal={IEEE Transactions on Big Data},<br>
-      volume={9},<br>
-      number={4},<br>
-      pages={1186--1197},<br>
-      year={2023},<br>
-      publisher={IEEE}<br>
-}</p>
-</div>  
+<h2 id="section3">部分 3</h2>
+<p>这是部分 3 的内容。</p>
+
+Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site.<a href="#section2">链接到部分 2</a> |  If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
 
 
 Getting started
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+1. Register a GitHub account if you don't have one and confirm your e-mail (required!)<a href="#section3">链接到部分 3</a>
 1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
 1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
 1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
 1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
 1. Check status by going to the repository settings, in the "GitHub pages" section
 
-<a href="#" class="custom-link" onclick="toggleContent('content3'); return false;">点击展开/隐藏内容3<br></a>
-<div id="content3" class="hidden-content">
-    这里是隐藏的内容3。
-</div>  
-
-<script>
-function toggleContent(contentId) {
-    var content = document.getElementById(contentId);
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-    } else {
-        content.style.display = 'none';
-    }
-}
-</script>
-
-</body>
-</html>
